@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Creator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- Header -->
+        <header>
+          <h1>Invoice Creator</h1>
+          <p>Thanks for choosing GoodCorp, LLC!</p>
+        </header>
+
+        <!-- CONTENT -->
+        <section>
+          <!-- Button group -->
+          <div id="task-btns" class="btn-group">
+            <!-- 
+                            Javascript rendering 
+                        -->
+          </div>
+
+          <!-- Task list -->
+          <div class="selected-services-container">
+            <div class="selected-services-header">
+              <p>TASK</p>
+              <p>TOTAL</p>
+            </div>
+            <div id="selected-services" class="selected-services-list">
+              <!-- 
+                                Javascript rendering 
+                            -->
+            </div>
+
+            <hr />
+
+            <div class="invoice-container">
+              <div class="invoice-container-header">
+                <p>NOTES</p>
+                <p>TOTAL AMOUNT</p>
+              </div>
+              <div class="invoice-bill-row">
+                <p id="payment-info">We accept cash, credit card, or PayPal</p>
+                <p id="sum-el">$0</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Send Button -->
+          <div class="invoice-btn">
+            <button id="send-btn">
+              <i class="fa fa-envelope"></i>Send Invoice
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
